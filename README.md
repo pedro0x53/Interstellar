@@ -3,7 +3,7 @@ A web site (non-responsive) with Interstellar theme based on the design of [desi
 
 <p align="center">
 	<img src="/media/screenshot-wallpaper-1.png" width=400>
-	<img src="/media/screenshot-wallpaper-1.png" width=400>
-	<img src="/media/screenshot-wallpaper-1.png" width=400>
+	<img src="/media/screenshot-wallpaper-2.png" width=400>
+	<img src="/media/screenshot-wallpaper-3.png" width=400>
 </p>
 
