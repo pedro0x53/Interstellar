@@ -1,0 +1,385 @@
+:root {
+	/* COLORS */
+	--cultured: #F1F1F1;
+	--cadet-gray: #94A4AE;
+	--alice-blue: #D5E2EC;
+	--indigo-dye: #1D3C58;
+	--deep-orange: #FF5722;
+	--charcoal: #44545E;
+	--rich-black: #121212;
+
+	/* GG ICONS */
+	--ggs: 1.25;
+
+	/* UTILS */
+	--line-height: 4rem;
+}
+
+.landing {
+	height: 100vh;
+	background-color: var(--cadet-gray);
+}
+
+.layer {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+}
+
+/* FIRST LAYER */
+.layer.first {
+	padding: 50px 70px;
+	z-index: 999;
+}
+
+/* SECOND LAYER */
+.layer.second {
+	z-index: 998;
+}
+
+.layer.second .svg-center {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 512px;
+	height: 512px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.layer.second .svg-center * {
+	position: absolute;
+}
+
+.layer.second .svg-center #lines {
+	height: 750px;
+}
+
+.layer.second .svg-center #circle {
+	width: 500px;
+	height: 500px;
+}
+
+.layer.second .svg-center #corners {
+	top: 50%;
+	right: 50%;
+	transform: translate(50%, -50%);
+	width: 100px;
+	height: 100px;
+	opacity: 1;
+}
+
+/* THIRD LAYER */
+.layer.third {
+	z-index: 997;
+}
+.layer.third h1 {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-family: "Knaf Art", sans-serif;
+	font-size: 64px;
+}
+
+/* FOURTH LAYER */
+.layer.fourth {
+	z-index: 996;
+	background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/wallpaper-1.png");
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-attachment: fixed;
+	object-fit: cover;
+	background-size: auto 100%;
+}
+
+.landing .content {
+	height: calc(100% - 64px);
+}
+
+.lower {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+}
+
+/* MENU */
+.menu {
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: var(--line-height);
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.icon {
+	position: relative;
+	width: 20px;
+	height: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.menu ul {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.menu ul li {
+	font-size: 0.9rem;
+	font-weight: 700;
+	padding: 0 1.75rem;
+	line-height: 48px;
+}
+
+/* QUOTE */
+
+.quote {
+	position: relative;
+	max-width: 750px;
+	max-height: 300px;
+	padding: 3.5rem;
+	margin: 50px 0px;
+}
+
+.quote #branch {
+	position: absolute;
+	top: 0;
+	left: 0;
+	max-height: 350px;
+}
+
+.quote .character {
+	font-size: 12px;
+	font-weight: bold;
+	text-transform: uppercase;
+	margin-bottom: 40px;
+}
+
+.quote .speech {
+	font-size: 38px;
+	font-weight: bold;
+	text-transform: capitalize;
+	margin-bottom: 40px;
+}
+
+.quote .saying {
+	font-size: 12px;
+	width: 70%;
+	margin-bottom: 10px;
+}
+
+.quote .author {
+	font-size: 12px;
+}
+
+
+/* FACTS */
+.facts {
+	position: relative;
+	max-width: 400px;
+}
+
+.facts h2 {
+	font-size: 13px;
+	margin-left: 60px;
+	margin-bottom: 30px;
+
+}
+
+.facts .fact {
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	margin: 30px 0px;
+}
+
+.facts .fact p {
+	font-size: 13px;
+	font-weight: bold;
+	margin-left: 20px;
+	text-transform: capitalize;
+}
+
+.facts .fact span.media {
+	position: relative;
+	width: 50px;
+	height: 50px;
+}
+
+.facts .fact span.media img {
+	width: 40px;
+	height: auto;
+}
+
+
+/* MINI-PLAYER */
+.mini-player {
+	position: relative;
+	width: 350px;
+	margin: 30px 0px;
+	padding: 30px 35px;
+	border-radius: 8px;
+	overflow: hidden;
+	background: rgba(255, 255, 255, 0.1);
+	backdrop-filter: saturate(150%) blur(10px);
+	-webkit-backdrop-filter: saturate(150%) blur(10px);
+	z-index: 2;
+}
+
+.mini-player .info {
+	margin-left: 10px;
+}
+
+.mini-player .info .cover {
+	width: 35px;
+	height: 35px;
+	background: var(--cultured);
+	border-radius: 50%;
+	overflow: hidden;
+}
+
+.mini-player .info .cover img {
+	width: 40px;
+	height: auto;
+}
+
+.mini-player .info .text .title {
+	font-size: 13px;
+	font-weight: bold;
+	margin-bottom: 4px;
+}
+
+.mini-player .info .text .artist {
+	font-size: 11px;
+	opacity: 0.8;
+}
+
+.mini-player .controller {
+	width: 50px;
+	margin-right: 25px;
+}
+
+.mini-player .gg-play-button {
+	--ggs: 2;
+}
+
+.mini-player .gg-play-track-next {
+	--ggs: 1.5;
+}
+
+.mini-player .music-slider span:not(.progress) {
+	font-size: 10px;
+	margin: 0 8px;
+}
+
+.mini-player .music-slider .slider-container {
+	width: 200px;
+}
+
+.slider-container {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.slider-container .progress {
+	border-radius: 2.5px;
+	pointer-events: none;
+	margin: 0;
+}
+
+.slider-container .slider {
+	position: relative;
+	-webkit-appearance: none;
+	appearance: none;
+	width: 100%;
+	height: 2px;
+	border-radius: 0;
+	background: var(--charcoal);
+	border-radius: 1px;
+}
+
+.slider::-webkit-slider-thumb {
+	-webkit-appearance: none;
+	appearance: none;
+	width: 6px;
+	height: 6px;
+	border-radius: 50%;
+	background: var(--cultured);
+}
+
+.slider::-moz-range-thumb {
+	width: 6px;
+	height: 6px;
+	border-radius: 50%;
+	background: var(--cultured);
+}
+
+.slider-container .progress {
+	position: absolute;
+	height: 2px;
+	min-width: 2.5px;
+	top: 0;
+	left: 0;
+	background: var(--cultured);
+	z-index: 2;
+}
+
+
+/* CURSOR */
+#cursor {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 30px;
+	height: 30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+	border: solid 2px var(--cultured);
+	z-index: 9;
+	user-select: none;
+	pointer-events: none;
+	transition: width .3s, height .3s, border-width .3s;
+	transition-timing-function: ease-out;
+}
+
+#cursor.active {
+	width: 20px;
+	height: 20px;
+	transition:  width .5s, height .5s;
+}
+
+#cursor.touching {
+	width: 0;
+	height: 0;
+	border-width: 4px;
+	transition:  width .5s, height .5s, border-width .5s;
+	filter: drop-shadow(0 0 2px rgba(0, 0, 0, .3));
+}
+
+.ripple {
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	background: radial-gradient(circle, var(--cultured), rgba(255, 255, 255, 0));
+	animation: 1s ripple ease-out;
+	opacity: 0;
+}

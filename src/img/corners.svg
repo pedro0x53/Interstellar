@@ -1,0 +1,3 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" data-name="layer" stroke="#F1F1F1" stroke-width="30" fill="none">
+	<path id="corners" d="M 0 0 H 128 0 V 0 128 M 0 512 H 128 0 V 512 384 M 512 0 H 384 512 V 0 128 M 512 512 H 384 512 V 512 384"/>
+</svg>

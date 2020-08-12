@@ -1,0 +1,45 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	color: var(--cultured);
+	font-family: "Montserrat", sans-serif;
+	cursor: none;
+}
+
+body {
+	width: 100vw;
+	height: 100vh;
+	background: var(--cadet-gray);
+}
+
+section {
+	width: 100vw;
+	height: 100vh;
+	max-height: 1120px;
+	position: sticky;
+	top: 0;
+}
+
+ul {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+p {
+	word-wrap: break-word;
+}
+
+button {
+	background: none;
+	outline: none;
+	border: none;
+	box-shadow: none;
+}
+
+input {
+	outline: none;
+}
